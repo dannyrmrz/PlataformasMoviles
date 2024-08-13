@@ -127,7 +127,7 @@ fun RestaurantInfoCard() {
             Spacer(modifier = Modifier.height(8.dp))
             Button(
                 onClick = {
-                    val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/maps/place/Moonrise+Comida+Vegana/@14.6195449,-90.5167419,18z/data=!4m7!3m6!1s0x8589a3894aaddddb:0x78841e86052531c5!4b1!8m2!3d14.6196182!4d-90.5144417!16s%2Fg%2F11fmc8hwmv?hl=en&entry=ttu"))
+                    val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.square_enix.android_googleplay.chrono&hl=en"))
                     context.startActivity(intent)
                 },
                 colors = ButtonDefaults.buttonColors(containerColor = Color.Blue)
@@ -138,7 +138,7 @@ fun RestaurantInfoCard() {
             Button(
                 onClick = {
                     val intent = Intent(Intent.ACTION_VIEW).apply {
-                        data = Uri.parse("https://www.google.com/maps/search/?api=1&query=Moonrise&query_place_id=ChIJd8BlQ2BZwokRAFUEcm_qrcA")
+                        data = Uri.parse("https://www.google.com/maps/place/Moonrise+Comida+Vegana/@14.6195449,-90.5167419,18z/data=!4m7!3m6!1s0x8589a3894aaddddb:0x78841e86052531c5!4b1!8m2!3d14.6196182!4d-90.5144417!16s%2Fg%2F11fmc8hwmv?hl=en&entry=ttu")
                     }
                     context.startActivity(intent)
                 }
